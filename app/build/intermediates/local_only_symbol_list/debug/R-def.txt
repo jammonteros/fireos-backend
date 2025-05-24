@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+drawable codigo
+drawable linda
+drawable muevas
+style Theme.FireOSLikeStreamingApp

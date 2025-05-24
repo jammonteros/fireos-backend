@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LuemTVApp" type="AndroidRunConfigurationType" factoryName="Android App">
+    <module name="app" />
+    <option name="CLEAR_LOGCAT" value="true" />
+    <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+    <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+  </configuration>
+</component>

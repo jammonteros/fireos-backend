@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.fireoslikestreamingapp-merged_res-68:/drawable_codigo.jpg.flat",
+        "source": "com.example.fireoslikestreamingapp-main-70:/drawable/codigo.jpg"
+    },
+    {
+        "merged": "com.example.fireoslikestreamingapp-merged_res-68:/drawable_linda.jpg.flat",
+        "source": "com.example.fireoslikestreamingapp-main-70:/drawable/linda.jpg"
+    },
+    {
+        "merged": "com.example.fireoslikestreamingapp-merged_res-68:/drawable_muevas.jpg.flat",
+        "source": "com.example.fireoslikestreamingapp-main-70:/drawable/muevas.jpg"
+    }
+]
