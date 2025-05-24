@@ -1,10 +1,25 @@
 export default function handler(req, res) {
+  // Configurar CORS
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
+
+  // Manejar preflight request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
   const movies = [
     {
       id: "1",
       title: "No Te Muevas",
       description: "Una película de suspenso que te mantendrá al borde del asiento.",
-      imageUrl: "https://tu-url-de-vercel.com/images/NoTeMuevas.jpg",
+      imageUrl: "/images/muevas.jpg",
       category: "Suspenso",
       rating: 4.5,
       year: 2024
@@ -13,7 +28,7 @@ export default function handler(req, res) {
       id: "2",
       title: "Código T",
       description: "Una historia de acción y misterio que te sorprenderá.",
-      imageUrl: "https://tu-url-de-vercel.com/images/Codigo-T-rojo.jpg",
+      imageUrl: "/images/codigo.jpg",
       category: "Acción",
       rating: 4.8,
       year: 2024
@@ -22,7 +37,7 @@ export default function handler(req, res) {
       id: "3",
       title: "Linda",
       description: "Una comedia romántica que te hará reír y llorar.",
-      imageUrl: "https://tu-url-de-vercel.com/images/linda-334322519-large.jpg",
+      imageUrl: "/images/linda.jpg",
       category: "Comedia",
       rating: 4.2,
       year: 2024
